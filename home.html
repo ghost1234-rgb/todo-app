@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO LIST - Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="icon.jpg">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <div class="app-card" id="print-card">
+        <h1>My Tasks</h1>
+        
+        <div id="input-container" class="hidden">
+            <input type="text" id="task-input" placeholder="What needs to be done?">
+            <button id="submit-task-btn">Add Task</button>
+        </div>
+
+        <ul id="task-list"></ul>
+
+        <!-- Enhanced Download Button -->
+        <button id="download-card-btn" class="download-btn hidden">
+            <i class="fa-solid fa-cloud-arrow-down"></i> Download & Clear List
+        </button>
+    </div>
+
+    <div class="add-task-btn-container">
+        <button class="add-task" id="plus-icon-btn" aria-label="Toggle input row">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+    </div>
+
+    <script src="home.js"></script>
+</body>
+</html>
