@@ -99,6 +99,8 @@ downloadCardBtn.addEventListener('click', () => {
     // REMOVED the clear tasks lines so the items stay on the screen!
 });
 
+window.saveAndRefresh();
+
 submitTaskBtn.addEventListener('click', handleAddTask);
 taskInput.addEventListener('keypress', (e) => {
     if (e.key === 'Enter') handleAddTask();
