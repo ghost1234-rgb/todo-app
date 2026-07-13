@@ -92,12 +92,11 @@ function saveAndRefresh() {
 }
 
 // Extract document and execute clean data wipe sequence
+// Extract document and execute print layout
 downloadCardBtn.addEventListener('click', () => {
     window.print();
     
-    // Clear the task array history instantly following download call
-    tasks = [];
-    saveAndRefresh();
+    // REMOVED the clear tasks lines so the items stay on the screen!
 });
 
 submitTaskBtn.addEventListener('click', handleAddTask);
